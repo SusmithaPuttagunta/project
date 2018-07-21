@@ -1,0 +1,42 @@
+
+
+			  /*************************************** CUSTOMER QUERIES **********************************************/
+
+1) Write a query to check for an employee based on id ?
+A) public static final String CHECK_EMPLOYEE_ID = "select employee from Employee employee where employee.employeeId=:employeeId"
+
+
+
+2) Write a query to check for an employee based on first name ?
+A) public static final String CHECK_EMPLOYEE_FIRST_NAME = "select employee from Employee employee where employee.firstName=:firstName"
+
+
+3) Write a query to check for an employee based on last name ?
+A) public static final String CHECK_EMPLOYEE_LAST_NAME = "select employee from Employee employee where employee.lastName=:lastName"
+
+
+4) Write a query to check for an employee based on department id ?
+A) public static final String CHECK_EMPLOYEE_DEPARTMENT_ID = "select employee from Employee employee where employee.deptid=:deptid"
+
+
+5) Write a query to check for an employee based on grade ?
+A) public static final String CHECK_EMPLOYEE_GRADE = "select employee from Employee employee where employee.grade=:grade"
+
+
+6) Write a query to check for an employee based on marital status?
+A) public static final String CHECK_EMPLOYEE_MARITAL_STATUS = "select employee from Employee employee where employee.maritalStatus:maritalStatus"
+
+
+			  /*************************************** ADMINISTRATOR QUERIES **********************************************/
+
+7) Write a query to checK employee based on user type?
+A) public static final String CHECK_LOGIN_CREDENTIALS = select userMaster from UserMaster userMaster where userMaster.userName=:userName and userMaster.userPassword=:userPassword"
+
+
+
+8) Write a query to display the applied leaves?
+A) public static final String DISPLAY_LEAVES="SELECT l FROM LeaveHistory l ,Employee e WHERE e.employeeId = l.empId and e.mgrId=:userId and status=:status"
+
+
+9) Write a query to update the status of leave?
+A) public static final String ADMIN_LEAVE_APPROVAL="update LeaveHistory leave set leave.status=:status where leave.leaveId=:leaveId"
